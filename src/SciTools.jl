@@ -8,7 +8,6 @@ Author: Damyn Chipman
 ===== HEADER FILE =====
 
 Contents:
- : Grids.jl
  : LineSegment.jl
 
 """
