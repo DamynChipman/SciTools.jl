@@ -16,14 +16,12 @@
 mutable struct LineSegment
 
     # -- Properties --
-    r1::Array{Float64}
-    r2::Array{Float64}
-    rC::Array{Float64}
+    r1::Array{Float64,1}
+    r2::Array{Float64,1}
     L::Float64
     theta::Float64
     n_hat::Array{Float64}
     t_hat::Array{Float64}
-    rC_offset::Float64
 
     # -- Constructor --
     function Panel2D(r1::Array{Float64,1},
