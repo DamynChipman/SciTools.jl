@@ -24,8 +24,8 @@ mutable struct LineSegment
     t_hat::Array{Float64}
 
     # -- Constructor --
-    LineSegment(r1::Array{Float64,1},
-                r2::Array{Float64,1})
+    function LineSegment(r1::Array{Float64,1},
+                         r2::Array{Float64,1})
 
         if length(r1) == 2
             x1, y1 = r1[1], r1[2]
