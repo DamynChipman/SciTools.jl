@@ -16,15 +16,15 @@
 mutable struct LineSegment
 
     # -- Properties --
-    R1::Array{Number}
-    R2::Array{Number}
+    R1::Array{Number,1}
+    R2::Array{Number,1}
     L::Number
     theta::Number
-    n_hat::Array{Number}
-    t_hat::Array{Number}
+    n_hat::Array{Number,1}
+    t_hat::Array{Number,1}
 
     # -- Constructor --
-    function LineSegment(r1::Array{Number},r2::Array{Number})
+    function LineSegment(r1::Array{Number,1},r2::Array{Number,1})
 
         if length(r1) == 2
             x1, y1 = r1[1], r1[2]
