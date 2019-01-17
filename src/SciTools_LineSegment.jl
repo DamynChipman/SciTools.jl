@@ -26,8 +26,8 @@ mutable struct LineSegment
     rC_offset::Float64
 
     # -- Constructor --
-    function Panel2D(r1::Array{Float64},
-                     r2::Array{Float64})
+    function Panel2D(r1::Array{Float64,1},
+                     r2::Array{Float64,1})
 
         if length(r1) == 2
             x1, y1 = r1[1], r1[2]
