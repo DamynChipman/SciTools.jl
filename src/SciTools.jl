@@ -14,6 +14,7 @@ Contents:
 module SciTools
 
 # ===== Imports =====
+using LinearAlgebra
 
 # ===== Global Variables =====
 const DEG2RAD = pi/180
