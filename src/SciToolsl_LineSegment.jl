@@ -38,7 +38,7 @@ mutable struct LineSegment
 
             t_hat = (r2 - r1)/norm(r2 - r1)
             n_hat = [t_hat[2],-t_hat[1]]
-            
+
         elseif length(r1) == 3
             x1, y1, z1 = r1[1], r1[2], r1[3]
             x2, y2, z2 = r2[1], r2[2], r2[3]
